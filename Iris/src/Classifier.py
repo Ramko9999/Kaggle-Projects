@@ -72,6 +72,7 @@ class NeuralNetwork():
 
         return total_grad.flatten()
 
+    #used to confirm that gradients are calculated correctly
     def gradient_check(self):
         Epsilon = pow(10, -4)
         approx_gradients= []
